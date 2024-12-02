@@ -35,13 +35,13 @@ jobs:
     # Step 5: Compile Sketch
     - name: Compile Sketch
       run: |
-        arduino-cli compile --fqbn esp8266:esp8266:d1_mini --output-dir ./build wemos_ota_project
+        arduino-cli compile --fqbn esp8266:esp8266:d1_mini --output-dir ./build ota_project
       env:
-        SKETCH_NAME: wemos_ota_project
+        SKETCH_NAME: ota_project
 
     # Step 6: Rename the Binary
     - name: Rename Compiled Binary
-      run: mv ./build/wemos_ota_project.ino.bin ./build/firmware.bin
+      run: mv ./build/ota_project.ino.bin ./build/firmware.bin
 
     # Step 7: Upload Firmware Binary to GitHub Releases
     - name: Create GitHub Release

@@ -1,0 +1,10 @@
+#ifndef WIFI_CONFIG_H
+#define WIFI_CONFIG_H
+
+// Use your Wi-Fi credentials for board connection
+//and remove ".template" from file name
+
+#define WIFI_SSID "<SSID>"
+#define WIFI_PASSWORD "<PASSWORD>"
+
+#endif

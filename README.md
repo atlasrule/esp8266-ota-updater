@@ -19,11 +19,6 @@ By leveraging GitHub Actions, it automates the build process and hosts the `firm
 2. GitHub Actions compiles the code and uploads the `firmware.bin` file whenever changes are pushed to the `main` branch.
 3. The device downloads and applies the update via OTA.
 
----
-
-## Repository Structure
-├── esp8266_ota_project/ # Project folder │ ├── esp8266_ota_project.ino # Main Arduino code file ├── .github/ │ └── workflows/ │ └── build-firmware.yml # GitHub Actions workflow for building firmware ├── LICENSE # Project license (e.g., MIT) ├── README.md # Project documentation
-
 
 ## Prerequisites
 

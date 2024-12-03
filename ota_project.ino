@@ -13,11 +13,10 @@ const char* password = WIFI_PASSWORD;
 // Firmware update URL
 const char* firmware_url = "https://github.com/<github_username>/<repo_name>/releases/latest/download/firmware.bin";
 
-
-
 // Update check interval (in msecs)
 const unsigned long updateInterval = 60 * 60 * 1000;  // 1 hour
 unsigned long lastUpdateCheck = 0;    // Timestamp of last update check
+
 
 // Watchdog timer
 Ticker watchdog;

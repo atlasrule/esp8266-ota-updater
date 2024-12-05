@@ -45,11 +45,11 @@ jobs:
       env:
         SKETCH_NAME: esp8266_ota_project
 
-    # Step 6: Rename the Binary
+    # Step 7: Rename the Binary
     - name: Rename Compiled Binary
       run: mv ./build/ota_project.ino.bin ./build/firmware.bin
 
-    # Step 7: Upload Firmware Binary to GitHub Releases
+    # Step 8: Upload Firmware Binary to GitHub Releases
     - name: Create GitHub Release
       uses: softprops/action-gh-release@v1
       with:

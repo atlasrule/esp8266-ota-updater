@@ -41,7 +41,6 @@ By leveraging GitHub Actions, it automates the build process and hosts the `firm
 ├── .github/
 │   └── workflows/
 │       └── build-firmware.yml    # GitHub Actions workflow for building firmware
-├── LICENSE                       # CC0
 ├── README.md                     # Project documentation
 ```
 

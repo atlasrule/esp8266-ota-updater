@@ -32,12 +32,18 @@ jobs:
         arduino-cli lib update-index
         arduino-cli lib install "ESP8266WiFi"
 
-    # Step 5: Compile Sketch
+    # Step 5: Replace placeholders with secrets
+    - name: Inject Secrets into Header
+      run: |
+        sed -i "s/<SSID_PLACEHOLDER>/${{ secrets.WIFI_SSID }}/" wifi_config.h
+        sed -i "s/<PASSWORD_PLACEHOLDER>/${{ secrets.WIFI_PASSWORD }}/" wifi_config.h
+
+    # Step 6: Compile Sketch
     - name: Compile Sketch
       run: |
-        arduino-cli compile --fqbn esp8266:esp8266:d1_mini --output-dir ./build ota_project
+        arduino-cli compile --fqbn esp8266:esp8266:d1_mini --output-dir ./build esp8266_ota_project
       env:
-        SKETCH_NAME: ota_project
+        SKETCH_NAME: esp8266_ota_project
 
     # Step 6: Rename the Binary
     - name: Rename Compiled Binary

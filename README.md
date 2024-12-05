@@ -190,9 +190,5 @@ git push origin main
 <br>
 
 
-## License
-
-This project is licensed under Creative Commons Zero License
-
 <br>
 <br>

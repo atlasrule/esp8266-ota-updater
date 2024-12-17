@@ -36,12 +36,12 @@ By leveraging GitHub Actions, it automates the build process and hosts the `firm
 
 ```
 ├── esp8266_ota_project/
-│   ├── esp8266_ota_project.ino   # Main Arduino code file
+│   └── esp8266_ota_project.ino   # Main Arduino code file
 ├── .gitignore
 ├── .github/
 │   └── workflows/
 │       └── build-firmware.yml    # GitHub Actions workflow for building firmware
-├── README.md                     # Project documentation
+└── README.md                     # Project documentation
 ```
 
 <br>
